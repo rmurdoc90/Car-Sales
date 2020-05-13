@@ -5,6 +5,7 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
+
 const App = props => {
 
   return (
@@ -24,7 +25,10 @@ const App = props => {
 const mapStateToProps = state =>{
   console.log(state)
   return{
-    ...state
+    car:state.car,
+    additionalFeatures:state.additionalFeatures,
+    additionalPrice:state.additionalPrice
+  
   }
 }
 
